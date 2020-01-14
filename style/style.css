@@ -48,9 +48,13 @@ table {
 }
 
 /* Globalne style tekstu */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	color: #7F8C8D;
+	font-family: 'Lato', sans-serif;
+	color: rgb(47,43,38);
 	line-height: 1.7;
 }
 
@@ -59,7 +63,7 @@ p {
 }
 
 h2, h3, h4, label {
-	color: #45474F;
+	color: rgb(226,92,0);
 }
 
 h1 {
@@ -140,14 +144,14 @@ section {
 }
 
 .button-dark {
-	background: #A1D76F;
+	background: rgb(25,73,111);
 	color: #FFFFFF;
 }
 
 /* Naglowek strony */
 .top {
 	height: 60px;
-	background: #34495E;
+	background: rgb(25,73,111);
 }
 
 .top a {
@@ -175,9 +179,9 @@ section {
 /* Baner */
 .banner {
 	color: #FFFFFF;
-	background: #000000;
 	padding: 200px 0;
-	background: url("../img/top.jpg") 0 -140px;
+	background: url("https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1369&q=80");
+	background-size: cover;
 }
 
 .banner h1 {
@@ -189,16 +193,18 @@ section {
 	margin-bottom: 32px;
 	width: 180px;
 	height: 180px;
+	padding: 10px;
+	border: 1px solid rgb(226,92,0);
 }
 
 .intro h3 {
-	color: #A1D76F;
+	color: rgb(25,73,111);
 	margin-bottom: 10px;
 }
 
 /* Sekcja Promocje */
 .promo {
-	background: #D15555;
+	background: rgb(25,73,111);
 }
 
 .promo h2 {
