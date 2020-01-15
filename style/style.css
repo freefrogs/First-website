@@ -56,6 +56,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	color: rgb(47,43,38);
 	line-height: 1.7;
+	min-width: 320px;
 }
 
 p {
@@ -98,18 +99,12 @@ h3 {
 
 .col-one-third, .col-half {
 	width: 100%;
-	float: none;
+	display: block;
+	margin-bottom: 7%;
 }
 
-@media screen and (min-width: 960px) {
-	.col-one-third {
-		width: 33.3333%;
-		float: left;
-	}
-	.col-half {
-		width: 50%;
-		float: left;
-	}
+.col-half {
+	text-align: center;
 }
 
 section {
@@ -179,7 +174,7 @@ section {
 /* Baner */
 .banner {
 	color: #FFFFFF;
-	padding: 200px 0;
+	padding: 200px 5%;
 	background: url("https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1369&q=80");
 	background-size: cover;
 }
@@ -190,7 +185,7 @@ section {
 
 /* Sekcja Intro */
 .intro img {
-	margin-bottom: 32px;
+	margin-bottom: 1%;
 	width: 180px;
 	height: 180px;
 	padding: 10px;
@@ -200,6 +195,10 @@ section {
 .intro h3 {
 	color: rgb(25,73,111);
 	margin-bottom: 10px;
+}
+
+.intro p {
+	padding: 0 5%;
 }
 
 /* Sekcja Promocje */
@@ -214,6 +213,11 @@ section {
 
 .promo p {
 	color: #EEEEEE;
+}
+
+.promo .container {
+	width: 90%;
+	margin: 0 auto;
 }
 
 /* Sekcja Kontakt */
@@ -234,4 +238,36 @@ section {
 	background: #000000;
 	color: #FFFFFF;
 	padding: 16px 0;
+	text-align: center;
+}
+
+/* RWD */
+@media screen and (min-width: 960px) {
+	.col-one-third {
+		width: 33.3333%;
+		float: left;
+	}
+	.col-half {
+		width: 50%;
+		float: left;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.promo img, .contact img {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	header .container {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	header .container {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
